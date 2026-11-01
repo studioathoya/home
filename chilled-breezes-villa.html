@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Athoya: hand-drawn ink sketches by Nafi’ Athoya Al Hikmah.">
+<title>Athoya — Chilled Breezes at the Villa</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 fill=%27%23111%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 text-anchor=%27middle%27 fill=%27%23fff%27 font-family=%27sans-serif%27%3EA%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#111111;text-decoration:none}a:hover{text-decoration:underline}
+[hidden]{display:none!important}
+img{max-width:100%}
+button.btn{font:inherit;font-size:15px;background:#ffffff;color:#111111;cursor:pointer;border-radius:0}
+button.btn:disabled{opacity:.6;cursor:default}
+.btn:hover:not(:disabled){background:#111111;color:#ffffff;text-decoration:none}
+.btn:focus-visible{outline:2px solid #111111;outline-offset:2px}
+.field{display:block;width:100%;box-sizing:border-box;margin:0;padding:12px 14px;font:inherit;font-size:16px;color:#111111;background:#ffffff;border:1px solid #111111;border-radius:0;min-height:44px}
+.field:focus-visible{outline:2px solid #111111;outline-offset:2px}
+.field.err{border-color:#C2185B}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+header{position:sticky;top:0;z-index:50;background:#ffffff!important;transition:box-shadow .2s ease}
+header.scrolled{box-shadow:0 1px 10px rgba(0,0,0,.08)}
+.menu-btn{display:none;width:44px;height:44px;margin:0 -10px 0 0;padding:0;border:0;background:none;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.menu-btn span{display:block;width:24px;height:2px;background:#111111;transition:transform .2s ease,opacity .2s ease}
+.menu-btn:focus-visible{outline:2px solid #111111;outline-offset:2px}
+@media (max-width:880px){
+ main>section>img{order:-1}
+}
+@media (max-width:640px){
+ header{padding:6px 20px!important;flex-wrap:nowrap!important}
+ main{padding-left:20px!important;padding-right:20px!important}
+ main>a{padding-left:0!important;padding-right:0!important}
+ .menu-btn{display:inline-flex}
+ #site-nav{display:none!important}
+ header.open #site-nav{display:flex!important;flex-direction:column;align-items:flex-end;position:absolute;top:100%;left:0;right:0;background:#ffffff;padding:4px 20px 24px;gap:0!important;box-shadow:0 10px 16px rgba(0,0,0,.08)}
+ body.page-works main,body.page-about main{padding-left:12%!important;padding-right:12%!important}
+ body.page-works main>div{gap:12px!important}
+ body.page-works .work{flex-basis:120px!important}
+ body.page-about main{gap:48px!important}
+ body.page-about main>section:first-child{gap:28px!important}
+ body.page-about main>section>img{width:100%!important;max-width:220px!important;flex:none!important}
+ body.page-about main>section:first-child h2{font-size:22px!important}
+ body.page-about main>section:first-child h3{font-size:14px!important;margin-top:32px!important}
+ body.page-about main>section:first-child p{font-size:14px!important}
+ body.page-about main>section:nth-of-type(2) h2{font-size:15px!important;margin-bottom:24px!important}
+ body.page-about main>section:nth-of-type(2)>p{font-size:14px!important;margin-bottom:24px!important}
+ body.page-about label{font-size:13px!important}
+ body.page-about p[role=alert]{font-size:13px!important}
+ body.page-about #contact-send{font-size:14px!important;padding:0 24px!important}
+ body.page-about #thanks{font-size:20px!important;padding:48px 0!important}
+ header>a{font-size:18px!important;letter-spacing:.26em!important}
+ #site-nav a{font-size:15px!important;min-height:48px!important;letter-spacing:.03em!important}
+ header.open .menu-btn span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+ header.open .menu-btn span:nth-child(2){opacity:0}
+ header.open .menu-btn span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+}
+</style>
+</head>
+<body class="page-chilled-breezes-villa" style="margin:0">
+<div style="width: 100%; box-sizing: border-box; display: flex; flex-direction: column; background: #ffffff; color: #111111; font-family: 'Jost', system-ui, sans-serif">
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 32px; padding: 20px 48px; box-sizing: border-box">
+<a href="index.html" aria-label="Athoya, home" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 26px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase">Athoya</a>
+<nav id="site-nav" aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 0 32px">
+<a href="works.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; letter-spacing: 0.06em; text-decoration: underline; text-underline-offset: 6px">Works</a>
+<a href="about.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; letter-spacing: 0.06em">About &amp; Contact</a>
+</nav>
+<button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+</header>
+<main style="width: 100%; max-width: 1056px; margin: 0 auto; padding: 24px 48px 80px; box-sizing: border-box">
+<img src="img/chilled-breezes-villa.jpg" alt="Ink sketch of a pitched-roof pavilion on a wooden deck with tables, a closed umbrella and a bare tree" style="display: block; width: 100%; height: auto">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px 24px; padding-top: 20px">
+<div>
+<h1 style="margin: 0 0 6px; font-size: 22px; font-weight: 400; letter-spacing: 0.04em">Chilled Breezes at the Villa</h1>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: #6B6B66">2026. Ink on Paper. 21 x 29,7 cm</p>
+</div>
+<a href="works.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; letter-spacing: 0.06em">← Back to Works</a>
+</div>
+</main>
+</div>
+<script>
+(function () {
+  var h = document.querySelector('header'), b = h && h.querySelector('.menu-btn');
+  if (!h || !b) return;
+  b.addEventListener('click', function () {
+    var o = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    b.setAttribute('aria-label', o ? 'Close menu' : 'Menu');
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && h.classList.contains('open')) b.click(); });
+  function onScroll() { h.classList.toggle('scrolled', window.scrollY > 4); }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script>
+</body>
+</html>
